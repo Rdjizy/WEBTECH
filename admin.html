@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order2Go – Admin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><img src="Image/logo.png" alt="Order2Go"></div>
+  <div class="nav-center"><span class="page-title">Admin Dashboard</span></div>
+  <div class="nav-right">
+    <span class="admin-badge">⚙️ Admin</span>
+    <button class="logout-btn" onclick="window.location.href='index.html'">Logout</button>
+  </div>
+</nav>
+
+<div class="dashboard">
+
+  <!-- STAT CARDS -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-icon">🛒</div>
+      <div class="stat-info">
+        <div class="stat-value">0</div>
+        <div class="stat-label">Total Orders</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">💰</div>
+      <div class="stat-info">
+        <div class="stat-value">₱0.00</div>
+        <div class="stat-label">Total Revenue</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">🍽️</div>
+      <div class="stat-info">
+        <div class="stat-value">0</div>
+        <div class="stat-label">Menu Items</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">👥</div>
+      <div class="stat-info">
+        <div class="stat-value">0</div>
+        <div class="stat-label">Registered Users</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT AREA -->
+  <div class="content-row">
+
+    <!-- RECENT ORDERS TABLE -->
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">Recent Orders</div>
+        <span class="panel-badge">0 orders</span>
+      </div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Table</th>
+            <th>Items</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="6" class="empty-row">No orders yet.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- MENU MANAGEMENT -->
+    <div class="panel side-panel">
+      <div class="panel-header">
+        <div class="panel-title">Menu Items</div>
+        <button class="add-item-btn">+ Add Item</button>
+      </div>
+      <div class="menu-list">
+        <div class="menu-list-item">
+          <img src="Image/Favorite.png" alt="">
+          <div class="mli-info">
+            <div class="mli-name">Founder's Favorite</div>
+            <div class="mli-cat">Waffles</div>
+          </div>
+          <div class="mli-price">₱195</div>
+          <div class="mli-actions">
+            <button class="mli-btn edit">✏️</button>
+            <button class="mli-btn delete">🗑️</button>
+          </div>
+        </div>
+        <div class="menu-list-item">
+          <img src="Image/Berrylicious.png" alt="">
+          <div class="mli-info">
+            <div class="mli-name">Berrylicious</div>
+            <div class="mli-cat">Waffles</div>
+          </div>
+          <div class="mli-price">₱195</div>
+          <div class="mli-actions">
+            <button class="mli-btn edit">✏️</button>
+            <button class="mli-btn delete">🗑️</button>
+          </div>
+        </div>
+        <div class="menu-list-item">
+          <img src="Image/Allfruits.png" alt="">
+          <div class="mli-info">
+            <div class="mli-name">All Fruits</div>
+            <div class="mli-cat">Waffles</div>
+          </div>
+          <div class="mli-price">₱195</div>
+          <div class="mli-actions">
+            <button class="mli-btn edit">✏️</button>
+            <button class="mli-btn delete">🗑️</button>
+          </div>
+        </div>
+        <div class="menu-list-item">
+          <img src="Image/Smores.png" alt="">
+          <div class="mli-info">
+            <div class="mli-name">S'mores'</div>
+            <div class="mli-cat">Waffles</div>
+          </div>
+          <div class="mli-price">₱195</div>
+          <div class="mli-actions">
+            <button class="mli-btn edit">✏️</button>
+            <button class="mli-btn delete">🗑️</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

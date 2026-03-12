@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order2Go</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="hero">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Image/logo.png">
+    </div>
+    <div class="nav-links">
+      <button class="login-btn" onclick="openLogin()">Login</button>
+      <a href="menu.html">
+        <button class="order-btn">Order Now</button>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO CONTENT -->
+  <div class="hero-content">
+    <h1>Order Instantly with QR Code</h1>
+    <p>Scan the QR code at your table to start ordering from your smartphone.</p>
+    <a href="menu.html">
+      <button class="cta-btn">Order Now</button>
+    </a>
+  </div>
+
+  <!-- FEATURE CARD -->
+  <div class="cards">
+    <div class="glass-card">
+      <img src="Image/QRcode.png" class="qr-image" alt="QR code">
+      <h3>Scan QR & Order</h3>
+      <p>Scan the QR code on your table and start ordering instantly from your phone.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- LOGIN PANEL -->
+<div class="login-panel" id="loginPanel">
+  <div class="login-box">
+    <button class="close-btn" onclick="closeLogin()">×</button>
+    <h2>Welcome Back</h2>
+    <p class="auth-subtitle">Sign in to your account</p>
+
+    <div id="login-error" class="auth-error" style="display:none;"></div>
+
+    <label>Username</label>
+    <input type="text" id="login-username" placeholder="Enter username">
+
+    <label>Password</label>
+    <input type="password" id="login-password" placeholder="Enter password">
+
+    <button class="login-submit" onclick="handleLogin()">Login</button>
+
+    <p class="auth-switch">
+      Don't have an account? <span onclick="switchToRegister()">Register here</span>
+    </p>
+  </div>
+</div>
+
+<!-- REGISTER PANEL -->
+<div class="login-panel" id="registerPanel">
+  <div class="login-box">
+    <button class="close-btn" onclick="closeRegister()">×</button>
+    <h2>Create Account</h2>
+    <p class="auth-subtitle">Register a new account</p>
+
+    <div id="register-error" class="auth-error" style="display:none;"></div>
+    <div id="register-success" class="auth-success" style="display:none;"></div>
+
+    <label>Username</label>
+    <input type="text" id="reg-username" placeholder="Choose a username">
+
+    <label>Password</label>
+    <input type="password" id="reg-password" placeholder="Choose a password">
+
+    <button class="login-submit" onclick="handleRegister()">Create Account</button>
+
+    <p class="auth-switch">
+      Already have an account? <span onclick="switchToLogin()">Login here</span>
+    </p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

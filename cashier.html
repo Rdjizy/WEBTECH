@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order2Go – Cashier POS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cashier.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><img src="Image/logo.png" alt="Order2Go"></div>
+  <div class="nav-search">
+    <input type="text" placeholder="Search menu…">
+  </div>
+  <div class="nav-right">
+    <span class="cashier-badge">🧾 Cashier</span>
+    <button class="logout-btn" onclick="window.location.href='index.html'">Logout</button>
+  </div>
+</nav>
+
+<div class="layout">
+
+  <div class="menu-area">
+    <div class="filter-row">
+      <button class="filter-pill active">All</button>
+      <button class="filter-pill">Waffles</button>
+      <button class="filter-pill">All Day Breakfast</button>
+      <button class="filter-pill">Pancakes</button>
+      <button class="filter-pill">Pasta</button>
+      <button class="filter-pill">Sandwiches</button>
+      <button class="filter-pill">Other Favorites</button>
+      <button class="filter-pill">Coffee & Drinks</button>
+    </div>
+
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img class="card-img" src="Image/Favorite.png" alt="Founder's Favorite">
+        <div class="card-badge">🔥 Popular</div>
+        <div class="card-body">
+          <div class="card-name">Founder's Favorite</div>
+          <div class="card-desc">Topped with slices of strawberry, banana, blueberry, and vanilla ice cream.</div>
+          <div class="card-price">₱195.00</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img class="card-img" src="Image/Berrylicious.png" alt="Berrylicious">
+        <div class="card-body">
+          <div class="card-name">Berrylicious</div>
+          <div class="card-desc">Topped with slices of strawberry, raspberry, blueberry, and vanilla ice cream.</div>
+          <div class="card-price">₱195.00</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img class="card-img" src="Image/Allfruits.png" alt="All Fruits">
+        <div class="card-badge">🔥 Popular</div>
+        <div class="card-body">
+          <div class="card-name">All Fruits</div>
+          <div class="card-desc">Topped with fresh strawberry, blueberry, mango, banana, and maple syrup.</div>
+          <div class="card-price">₱195.00</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img class="card-img" src="Image/Smores.png" alt="S'mores">
+        <div class="card-badge">🔥 Popular</div>
+        <div class="card-body">
+          <div class="card-name">S'mores'</div>
+          <div class="card-desc">Topped with toasted marshmallows, crushed graham crackers, Nutella, and chocolate drizzle.</div>
+          <div class="card-price">₱195.00</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img class="card-img" src="Image/OreoOverload.png" alt="Oreo Overload">
+        <div class="card-body">
+          <div class="card-name">Oreo Overload</div>
+          <div class="card-desc">Topped with Oreos, chocolate chips, vanilla ice cream, and chocolate drizzle.</div>
+          <div class="card-price">₱185.00</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img class="card-img" src="Image/BananaAlmond.png" alt="Banana Almond Crunch">
+        <div class="card-body">
+          <div class="card-name">Banana Almond Crunch</div>
+          <div class="card-desc">Topped with banana slices, almonds, vanilla ice cream, and caramel drizzle.</div>
+          <div class="card-price">₱185.00</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img class="card-img" src="Image/StrawberryBlonde.png" alt="Strawberry Blonde">
+        <div class="card-body">
+          <div class="card-name">Strawberry Blonde</div>
+          <div class="card-desc">Topped with strawberry slices, crushed graham, strawberry ice cream, and caramel drizzle.</div>
+          <div class="card-price">₱185.00</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img class="card-img" src="Image/MangoFantasy.png" alt="Mango Fantasy">
+        <div class="card-body">
+          <div class="card-name">Mango Fantasy</div>
+          <div class="card-desc">Topped with slices of mango, crushed graham, vanilla ice cream, and caramel drizzle.</div>
+          <div class="card-price">₱185.00</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="order-panel">
+    <div class="order-header">
+      <div class="order-title">Your Order</div>
+      <div class="order-count">0</div>
+    </div>
+
+    <div class="order-items">
+      <div class="order-empty">
+        <div class="order-empty-icon">🛒</div>
+        <div>No items yet.<br>Click a menu item to add.</div>
+      </div>
+    </div>
+
+    <div class="order-footer">
+      <div class="breakdown">
+        <div class="breakdown-row"><span>Subtotal</span><span>₱0.00</span></div>
+        <div class="breakdown-row"><span>Service charge (5%)</span><span>₱0.00</span></div>
+        <div class="breakdown-row total-row"><span>Total</span><span>₱0.00</span></div>
+      </div>
+
+      <div class="action-grid">
+        <button class="action-btn">Remove All</button>
+        <button class="action-btn muted"></button>
+        <button class="action-btn muted"></button>
+        <button class="action-btn">PWD Discount</button>
+        <button class="action-btn">Scan QR</button>
+        <button class="action-btn muted"></button>
+      </div>
+
+      <button class="complete-btn">Complete Payment</button>
+      <button class="print-btn">Print Receipt</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="cashier.js"></script>
+</body>
+</html>
